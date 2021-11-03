@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head th:replace="~{common::header('登录')}">
+    <meta charset="UTF-8">
+    <title>登录</title>
+</head>
+<body>
+
+    <h1>登录</h1>
+    <form th:action="@{/user/login}" method="post">
+    用户名：<input type="text" name="loginId" /> 密码：<input type="password" name="password" /> <input type="submit" value="登录" />
+    </form>
+</body>
+</html>
